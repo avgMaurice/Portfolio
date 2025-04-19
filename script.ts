@@ -41,61 +41,6 @@ function initSmoothScrolling(): void {
     });
 }
 
-/**
- * Initialize form validation for the contact form
- */
-function initFormValidation(): void {
-    const contactForm = document.getElementById('contact-form') as HTMLFormElement;
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Get form inputs
-            const nameInput = document.getElementById('name') as HTMLInputElement;
-            const emailInput = document.getElementById('email') as HTMLInputElement;
-            const messageInput = document.getElementById('message') as HTMLTextAreaElement;
-            
-            // Simple validation
-            let isValid = true;
-            
-            if (!nameInput.value.trim()) {
-                showError(nameInput, 'Name is required');
-                isValid = false;
-            } else {
-                removeError(nameInput);
-            }
-            
-            if (!emailInput.value.trim()) {
-                showError(emailInput, 'Email is required');
-                isValid = false;
-            } else if (!isValidEmail(emailInput.value)) {
-                showError(emailInput, 'Please enter a valid email');
-                isValid = false;
-            } else {
-                removeError(emailInput);
-            }
-            
-            if (!messageInput.value.trim()) {
-                showError(messageInput, 'Message is required');
-                isValid = false;
-            } else {
-                removeError(messageInput);
-            }
-            
-            // If form is valid, simulate form submission
-            if (isValid) {
-                // In a real application, you would send the form data to a server
-                // For this demo, we'll just show a success message
-                showFormSuccess(contactForm);
-            }
-        });
-    }
-}
-
-/**
- * Show error message for an input
- */
 function showError(input: HTMLInputElement | HTMLTextAreaElement, message: string): void {
     // Remove any existing error
     removeError(input);
