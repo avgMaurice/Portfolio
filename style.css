@@ -296,12 +296,6 @@ nav {
     background-color: #2980b9;
     color: #fff;
 }
-
-/* Contact Section */
-#contact {
-    background-color: #1a1a1a;
-}
-
 .contact-content {
     display: flex;
     gap: 50px;
