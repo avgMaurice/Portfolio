@@ -82,9 +82,11 @@ nav {
     font-size: 1.8rem;
     font-weight: bold;
     color: #3498db;
+
 }
 
 .nav-links {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     list-style: none;
 }
@@ -132,6 +134,7 @@ nav {
 }
 
 .highlight {
+    font-family: "Playwrite DK Loopet", serif;
     color: #3498db;
 }
 
@@ -192,123 +195,6 @@ nav {
     border-radius: 50%;
     font-weight: bold;
     color: #aaa;
-    border: 5px solid #3498db;
-}
-
-/* Skills Section */
-#skills {
-    background-color: #1a1a1a;
-}
-
-.skills-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.skill-card {
-    flex: 1;
-    min-width: 300px;
-    background-color: #2a2a2a;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.skill-card h3 {
-    text-align: center;
-    color: #3498db;
-    margin-bottom: 20px;
-}
-
-.skill-card ul {
-    list-style-position: inside;
-}
-
-.skill-card li {
-    margin-bottom: 10px;
-    padding-left: 10px;
-}
-
-/* Projects Section */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.project-card {
-    background-color: #2a2a2a;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-.project-image {
-    height: 200px;
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #aaa;
-    font-weight: bold;
-}
-
-.project-card h3 {
-    padding: 20px 20px 10px;
-}
-
-.project-card p {
-    padding: 0 20px 20px;
-}
-
-.project-links {
-    display: flex;
-    padding: 0 20px 20px;
-    gap: 15px;
-}
-
-.project-link {
-    padding: 8px 15px;
-    background-color: #3498db;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    transition: background-color 0.3s ease;
-}
-
-.project-link:hover {
-    background-color: #2980b9;
-    color: #fff;
-}
-.contact-content {
-    display: flex;
-    gap: 50px;
-    margin-top: 40px;
-}
-
-.contact-info, .contact-form {
-    flex: 1;
-}
-
-.contact-info p {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
 }
 
 .social-links {
